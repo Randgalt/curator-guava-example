@@ -8,18 +8,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-recipes</artifactId>
-            <version>3.3.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-test</artifactId>
-            <version>3.3.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>21.0</version>
@@ -31,6 +19,42 @@
             <version>1.7.6</version>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>3_2</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.curator</groupId>
+                    <artifactId>curator-recipes</artifactId>
+                    <version>3.2.0</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.curator</groupId>
+                    <artifactId>curator-test</artifactId>
+                    <version>3.2.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+
+        <profile>
+            <id>3_3</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.curator</groupId>
+                    <artifactId>curator-recipes</artifactId>
+                    <version>3.3.0</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.curator</groupId>
+                    <artifactId>curator-test</artifactId>
+                    <version>3.3.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
