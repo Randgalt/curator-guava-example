@@ -1,5 +1,5 @@
 # curator-guava-example
-Shows that Curator 3.3.0 works with Guava 21
+Shows that Curator 3.3.0 and 2.12.0 works with Guava 21
 
 To show non-shaded Guava run with Curator 3.2: 
 
